@@ -1,0 +1,21 @@
+@function grid-width($n) {
+  @return ($n /12)*100;
+}
+[class*="col-"]{
+  min-height: 384px;
+  padding: 12px;
+  border: 12px solid white;
+  float: left;
+}
+.col-1 { width: grid-width(1%); }
+.col-2 { width: grid-width(2%); }
+.col-3 { width: grid-width(3%); }
+.col-4 { width: grid-width(4%); }
+.col-5 { width: grid-width(5%); }
+.col-6 { width: grid-width(6%); }
+.col-7 { width: grid-width(7%); }
+.col-8 { width: grid-width(8%); }
+.col-9 { width: grid-width(9%); }
+.col-10 { width: grid-width(10%); }
+.col-11 { width: grid-width(11%); }
+.col-12 { width: grid-width(12%); }
