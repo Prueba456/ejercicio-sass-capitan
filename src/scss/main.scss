@@ -22,24 +22,72 @@ $large: 1024px;
   position: relative;
   list-style: none;
   li{
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;;
+    margin-right: 10px;
     color: white;
     background-color: $backgroung-plomo;
     padding: 5px;
   }
+  #ejercicio{
+    background-color: $background-laboratoria;
+  }
+}
+#contenido , #descripcion{
+  position: relative;
+  padding: 10px;
+}
+
+.aside{
+  text-align: center;
+  color: white;
+  background-color: $backgroung-plomo;
+}
+footer{
+  background-color: $backgroung-plomo;
+  height: 30px;
+  padding: 25px;
+  color: white;
+  text-align: center;
+}
+ol{
+  list-style-type: decimal-leading-zero;
+  padding-left: 2em;
+}
+#contenido h1{
+  margin-top: 30px;
+  margin-bottom: 15px;
   @media (min-width: $media){
-    width: 400px;
+    margin-top: 0;
+  }
+}
+h4{
+  margin-top: 20px;
+}
+
+@media (min-width: $media){
+
+  #menu{
+    float: left;
+    display: inline-block;
+    width: grid-width(3%);
+  }
+  #contenido{
+    display: inline-block;
+    width: grid-width(8%);
   }
 }
 
-// .profile-pic {
-//   float: left;
-//   width: 250px;
-//   @media screen and (min-width: $media) {
-//     width: 100px;
-//     float: none;
-//   }
-//   @media screen and (min-width: $large) {
-//     float: right;
-//   }
-// }
+@media (min-width: $large){
+  #contenido{
+    display: inline-block;
+    width: grid-width(5.5%);
+    float: left;
+  }
+  #descripcion{
+    display: inline-block;
+    width: grid-width(3%);
+
+  }
+}

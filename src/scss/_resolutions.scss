@@ -2,10 +2,6 @@
   @return ($n /12)*100;
 }
 [class*="col-"]{
-  min-height: 384px;
-  padding: 12px;
-  border: 12px solid white;
-  float: left;
 }
 .col-1 { width: grid-width(1%); }
 .col-2 { width: grid-width(2%); }
